@@ -1,0 +1,37 @@
+﻿<Window x:Class="Ex01_Login.Subtracao"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ex01_Login"
+        mc:Ignorable="d"
+        Title="Subtracao" Height="450" Width="800"
+        WindowStyle="None">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF5FF1E4"/>
+            <GradientStop Color="#FFE466E4" Offset="1"/>
+            <GradientStop Color="#FFD377E4" Offset="0.728"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <TextBox x:Name="txt_n1" HorizontalAlignment="Left" Margin="100,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" Height="60"/>
+        <TextBox x:Name="txt_n2" HorizontalAlignment="Left" Margin="545,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="177" Height="60"/>
+        <TextBox x:Name="txt_resul" HorizontalAlignment="Center" Margin="0,352,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" Height="40" BorderThickness="1,1,1,1"/>
+        <Button x:Name="Bt_Subtrair" Content="SUBTRAIR" HorizontalAlignment="Center" Margin="0,195,0,0" VerticalAlignment="Top" Height="75" Width="119" RenderTransformOrigin="0.489,1.389" Background="#FF87E2D1" FontSize="20" FontWeight="Bold" Foreground="#FFF3EDED" Click="Bt_Subtrair_Click"/>
+        <Label Content="SUBTRAÇÃO" HorizontalAlignment="Center" Margin="0,13,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="91" Width="279" Foreground="White" FontWeight="Bold" FontSize="72" FontFamily="Bahnschrift Light Condensed">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.627"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label Content="NÚMERO 1" HorizontalAlignment="Left" Margin="119,118,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.395,-1.297" Height="42" Width="139" FontSize="22" FontWeight="Bold" Background="{x:Null}" Foreground="#FFD6D6D6"/>
+        <Label Content="NÚMERO 2" HorizontalAlignment="Left" Margin="564,123,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.395,-1.297" Height="42" Width="139" FontSize="22" FontWeight="Bold" Background="{x:Null}" Foreground="#FFD6D6D6"/>
+        <Label Content="RESULTADO" HorizontalAlignment="Center" Margin="0,310,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.395,-1.297" Height="42" Width="140" FontSize="22" FontWeight="Bold" Background="{x:Null}" Foreground="#FFD6D6D6"/>
+
+    </Grid>
+</Window>

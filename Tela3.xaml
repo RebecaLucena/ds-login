@@ -1,0 +1,52 @@
+﻿<Window x:Class="Ex01_Login.Tela3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ex01_Login"
+        mc:Ignorable="d"
+        Title="Tela3" Height="450" Width="800"
+        WindowStyle="None">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF71E8F3"/>
+                    <GradientStop Color="#FFD76BFF" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Label Content="Dados Pessoais" FontSize="24" Width="207" Foreground="#FFF9F8F8" FontWeight="Bold"/>
+            <Label Content="Nome" Width="350"/>
+            <TextBox x:Name="txtNome" Padding="6" Width="350"/>
+            <Label Content="Data Nascimento" Width="350"/>
+            <DatePicker x:Name="dataNacimento" Padding="6" Width="350"/>
+            <Label Content="CPF" Width="350"/>
+            <TextBox x:Name="txtCPF" Padding="6" Width="350"/>
+            <Label Content="RG" Width="350"/>
+            <TextBox x:Name="txtRG" Padding="6" Width="350"/>
+        </StackPanel>
+        <StackPanel Grid.Column="1">
+            <StackPanel.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF66E2E2"/>
+                    <GradientStop Color="#FFD76BFF" Offset="1"/>
+                </LinearGradientBrush>
+            </StackPanel.Background>
+            <Label Content="Dados Endereço" FontSize="24" Width="205" FontWeight="Bold" Foreground="#FFFDFDFD" />
+            <Label Content="Rua" Width="350"/>
+            <TextBox x:Name="txtRua" Padding="6" Width="350"/>
+            <Label Content="Bairro" Width="350"/>
+            <TextBox x:Name="txt_bairro" Padding="6" Width="350"/>
+            <Label Content="Número" Width="350"/>
+            <TextBox x:Name="txt_numero" Padding="6" Width="350"/>
+            <Label Content="Ponto de Referência" Width="350"/>
+            <TextBox x:Name="txt_pontorefe" Padding="6" Width="350"/>
+
+        </StackPanel>
+    </Grid>
+</Window>
