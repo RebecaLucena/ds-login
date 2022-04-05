@@ -24,5 +24,22 @@ namespace Ex01_Login
         {
             InitializeComponent();
         }
+
+        private void bt_logar_Click(object sender, RoutedEventArgs e)
+        {
+                string use = txt_email.Text;
+                string senha = txt_senha.Password.ToString();
+
+                if (use == "mat@gmail.com" && senha == "123")
+                {
+                    Menu ppmenu = new Menu();
+                    ppmenu.ShowDialog();
+                }
+
+                else MessageBox.Show("SEU E-MAIL OU SENHA ESTA INCORRETO", "Mat.com", MessageBoxButton.OK);
+                txt_senha.Clear();
+                txt_email.Clear();
+           
+        }
     }
 }
